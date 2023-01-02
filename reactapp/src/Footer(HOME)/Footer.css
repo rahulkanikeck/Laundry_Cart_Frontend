@@ -1,0 +1,211 @@
+.first_footer {
+  width: 1480px;
+  height: 80px;
+  padding: 0px;
+  margin: auto;
+  background: #f8f9ff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 48px #0000000f;
+  opacity: 1;
+}
+.refer_Earn_container {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.refer_Earn {
+  font-family: Open Sans, Semibold;
+  color: #5861ae;
+  font-size: 24px;
+  width: 519px;
+  height: 33px;
+}
+.T_C_apply {
+  font-family: Avenir;
+  font-style: italic;
+  font-size: 10px;
+  color: black;
+  position: relative;
+  width: 519px;
+  /* height: 33px; */
+  bottom: 20px;
+}
+.header_list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  position: relative;
+  left: 875px;
+  bottom: 17px;
+}
+.header_list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #00000029;
+  width: 112.5px;
+  height: 80px;
+}
+.header_list li:nth-child(1) {
+  border-left: 1px solid #00000029;
+}
+.header_list li:nth-child(4) {
+  cursor: pointer;
+  color: white;
+  background: #5861ae 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+}
+.header_list li:hover {
+  cursor: pointer;
+  color: white;
+  background: #5861ae 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+}
+.Mid_footer {
+  /* Layout Properties */
+  top: 930px;
+  left: 0px;
+  width: 1480px;
+  height: 197px;
+  margin: auto;
+  padding: 0px;
+  /* UI Properties */
+  background: #f8f9ff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 48px #0000000f;
+  background: transparent url("../imgs/Footer.svg") 0% 0% no-repeat padding-box;
+  background-position: center;
+  background-size: 1500px, 197px;
+  opacity: 1;
+}
+.Mid_footer_Contact_Detail {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.AboutUs {
+  font: normal normal medium 18px/24px Avenir;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.18px;
+  color: #182838;
+  text-transform: uppercase;
+  opacity: 1;
+  font-size: 18px;
+  width: 100px;
+  height: 25px;
+  position: relative;
+  left: 137px;
+  top: 37px;
+}
+.Door_Step {
+  font: normal normal normal 15px/20px Avenir;
+  text-align: left;
+  letter-spacing: 0.6px;
+  color: #3d3d43;
+  text-transform: capitalize;
+  opacity: 1;
+  font-size: 15px;
+  width: 251px;
+  height: 20px;
+  position: relative;
+  left: 142px;
+  top: 18px;
+}
+.link_Container {
+  display: inline-flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  width: 450px;
+  position: relative;
+  bottom: 160px;
+  left: 180px;
+}
+.Home_Pricing_career_contact {
+  list-style: none;
+  display: flex;
+
+  font: normal normal medium 16px/24px Avenir;
+  font-weight: bold;
+  letter-spacing: 0.16px;
+  color: #182838;
+  text-transform: capitalize;
+  opacity: 1;
+  font-size: 16px;
+}
+.Home_Pricing_career_contact li {
+  margin-right: 50px;
+}
+.signin_register_Blogs_create {
+  display: flex;
+}
+.Blogs_create,
+.signin_register {
+  margin: 0px;
+  list-style: none;
+  text-align: left;
+}
+.Blogs_create li,
+.signin_register li {
+  margin: 0px 112px 20px 0px;
+}
+.social_media_container {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: 200px;
+  left: 225px;
+  bottom: 160px;
+
+  height: 90px;
+}
+#Social_Media {
+  display: inline-block;
+  text-align: center;
+  font: normal normal medium 18px/24px Avenir;
+  letter-spacing: 0.18px;
+  color: #182838;
+  text-transform: uppercase;
+  opacity: 1;
+  width: 200px;
+
+  margin: 0px;
+}
+.icon_Container {
+  display: inline-flex;
+  list-style: none;
+  width: 160px;
+  margin: auto 0px;
+  padding-inline-start: 0px;
+  position: relative;
+  left: 18px;
+  top: 0px;
+}
+.icon_Container li {
+  list-style: none;
+}
+#fb_Icon,
+#insta_Icon,
+#Ln_Icon {
+  margin: 0px 35px 0px 0px;
+}
+#fb_Icon,
+#insta_Icon,
+#Ln_Icon img {
+  color: black;
+}
+.End_footer {
+  /* Layout Properties */
+  top: 1123px;
+  left: 0px;
+  width: 1480px;
+  height: 50px;
+  color: white;
+  margin: auto;
+  /* UI Properties */
+  background: #182838 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+}
