@@ -131,26 +131,26 @@
   height: 20px;
   margin: 2px auto;
   border: none;
-  border-bottom: 3px solid #5861ae;
+  border-bottom: 2px solid #ababb1;
   font-size: 17px;
   background: transparent;
   opacity: 1;
 }
-#Registation_validation_six_sixteen_pass {
+#Registation_Form_validation_ErrMsg {
   display: inline-flex;
   text-align: right;
-  width: 380px;
+  width: 500px;
   font: normal normal medium 16px/26px Avenir;
   letter-spacing: 0.64px;
   text-transform: capitalize;
   opacity: 1;
   position: relative;
-  left: 295px;
+  left: 340px;
   bottom: 60px;
   margin: auto;
   color: red;
 }
-#Registation_validation_six_sixteen_pass:hover {
+#Registation_Form_validation_ErrMsg:hover {
   cursor: pointer;
 }
 .Accept_T_C_container {
@@ -210,18 +210,4 @@
 .fa-lock:hover {
   cursor: pointer;
   scale: 1.2;
-}
-.Registation_errorMsg {
-  display: inline-block;
-  color: red;
-  font-size: 16px;
-  width: 200px;
-  margin: 0px;
-  position: relative;
-  left: 140px;
-  bottom: 48px;
-  padding: 0px;
-  right: 20px;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
 }

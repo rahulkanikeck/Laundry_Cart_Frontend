@@ -37,7 +37,7 @@ function SignIn() {
           toast.success("Login Successfully");
           setloginData(data);
           setTimeout(() => {
-            RegisterPagenavigate("/createorders");
+            RegisterPagenavigate("/orders");
           }, 1500);
         }
       })
@@ -97,11 +97,10 @@ function SignIn() {
                     Name = { Phone: e.target.value };
                   }
                   setUserData({ ...UserData, ...Name });
-                  console.log(e.target.name);
+                  // console.log(e.target.name);
                 }}
                 required
               />
-
               <input
                 type={"password"}
                 id="password"
