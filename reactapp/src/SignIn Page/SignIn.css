@@ -1,0 +1,163 @@
+.wrapper {
+  border: 1px solid #cecedc;
+  width: 1480px;
+  margin: auto;
+}
+.Section_Container {
+  display: flex;
+  width: 1480px;
+  margin: auto;
+  height: 500px;
+}
+.LeftSide_Container {
+  margin: auto 0px;
+  border-right: 1px solid gray;
+  width: 50%;
+}
+.LeftSide_Container h1 {
+  width: 411px;
+  color: #5861ae;
+  margin: 10px auto;
+  text-align: left;
+  font: normal normal 900 100px/120px Avenir;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  opacity: 1;
+}
+#DoorStep_para {
+  width: 411px;
+  margin: 4px auto;
+  text-align: left;
+  font: normal normal normal 20px/26px Avenir;
+  letter-spacing: 0.8px;
+  color: #565657;
+  text-transform: capitalize;
+  opacity: 1;
+}
+#DontHaveAccount_para {
+  width: 411px;
+  margin: 0px auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: left;
+  font: normal normal normal 16px/26px Avenir;
+  letter-spacing: 0.64px;
+  color: #565657;
+  text-transform: capitalize;
+  opacity: 1;
+}
+.LeftSide_Container button {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  right: 130px;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #4552c1;
+  border-radius: 4px;
+  opacity: 1;
+}
+.LeftSide_Container button:hover {
+  cursor: pointer;
+  background-color: #4552c1;
+  color: white;
+}
+.form_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  margin: auto 0px;
+  background: #b9c0fd1a 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.form_container h1 {
+  display: inline-block;
+  font-size: 32px;
+  width: 135px;
+  height: 44px;
+  margin: 0px;
+  margin-bottom: 50px;
+  text-align: left;
+  font: normal normal medium 32px/60px Avenir;
+  letter-spacing: 1.28px;
+  color: #4552c1;
+  text-transform: uppercase;
+  opacity: 1;
+  position: relative;
+  left: 165px;
+  bottom: 30px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.UserDetail {
+  display: flex;
+  width: 400px;
+  height: 50px;
+  margin: auto;
+  border: none;
+  border-bottom: 2px solid gray;
+  font-size: 17px;
+  background: transparent;
+  opacity: 1;
+}
+.form_container #forgot_pass {
+  display: inline-flex;
+  text-align: right;
+  width: 140px;
+  font: normal normal medium 16px/26px Avenir;
+  letter-spacing: 0.64px;
+  color: #4552c1;
+  text-transform: capitalize;
+  opacity: 1;
+  position: relative;
+  left: 205px;
+  bottom: 10px;
+  margin: auto;
+}
+.form_container p:hover {
+  cursor: pointer;
+}
+#SignIn_btn {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  top: 105px;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #4552c1;
+  border-radius: 4px;
+  opacity: 1;
+}
+#SignIn_btn:hover {
+  cursor: pointer;
+  background-color: #4552c1;
+  color: white;
+}
+.fa-lock {
+  color: rgb(18, 18, 18);
+  position: relative;
+  bottom: 40px;
+  left: 330px;
+  width: 15px;
+  height: 21px;
+}
+.fa-lock:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+.errorMsg {
+  display: inline-block;
+  color: red;
+  font-size: 16px;
+  width: 200px;
+  margin: 0px;
+  position: relative;
+  left: 140px;
+  bottom: 48px;
+  padding: 0px;
+  right: 20px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}

@@ -1,0 +1,58 @@
+.Header_Container {
+  width: 1480px;
+  height: 80px;
+  padding: 0px;
+  margin: auto;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 48px #0000000f;
+  opacity: 1;
+}
+.Header {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+}
+.laundry_home_page {
+  font-family: Avenir;
+  color: #5861ae;
+  position: relative;
+  width: 108px;
+  height: 27px;
+  left: 119px;
+}
+.header_list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  position: relative;
+  left: 875px;
+  bottom: 17px;
+}
+.header_list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #00000029;
+  width: 112.5px;
+  height: 80px;
+}
+.header_list a {
+  text-decoration: none;
+}
+.header_list li:nth-child(1) {
+  border-left: 1px solid #00000029;
+}
+.header_list a li {
+  cursor: pointer;
+  color: white;
+  background: #5861ae 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+}
+.header_list li:hover {
+  cursor: pointer;
+  color: white;
+  background: #5861ae 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+}
