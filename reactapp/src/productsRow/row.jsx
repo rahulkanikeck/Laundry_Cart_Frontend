@@ -145,8 +145,8 @@ const ProductRow = () => {
         total_price += 90; // Delivery Charges
         const date = Date.now();
         const order_id = `ORLA${date}`;
-        const storeLocation =
-            document.getElementById("storeLocation").value || "JP Nagar";
+        const storeLocation = document.getElementById("storeLocation").value || "JP Nagar";
+        const storeAddress = document.getElementById("storeAddress").value || "Near Phone booth, 10th road,"
         const storePhone = document.getElementById("storePhone").value || 9988776655;
 
         const token = getToken("token");
@@ -160,6 +160,7 @@ const ProductRow = () => {
             body: JSON.stringify({
                 orderId: order_id,
                 storeLocation: storeLocation,
+                storeAddress: storeAddress,
                 city: "Bangalore",
                 storePhone: storePhone,
                 totalItems: total_items,
@@ -204,9 +205,8 @@ const ProductRow = () => {
                 <div id="summary">
                     <div className="heading both">
                         <div >Summary</div>
-                        <img src="/icons/cancel.png" alt="cancel" className="png" onClick={()=> {setSummaryOn(!summaryOn)}}/>
+                        <img src="/icons/cancel.png" alt="cancel" className="png" onClick={() => { setSummaryOn(!summaryOn) }} />
                     </div>
-                    {/* <div className='heading'>Summary</div> */}
                     <div className='subheading'>
                         <div className='inline_hd'>
                             Store Location:{" "}
@@ -259,10 +259,10 @@ const ProductRow = () => {
                         ))}
                         <li className='total_block' >Sub Total: &nbsp;&nbsp;{handleSubmit("total")}</li>
                         <li className='total_block'>Pickup Charges: 90</li>
-                        <li className='total_block' style={{ background: "#5861AE", fontWeight:"bold" , fontSize:"25px" ,color: "white", width: "35vw", textAlign: "right" }}>Total: <span >{parseInt(handleSubmit("total")) + 90}</span></li>
+                        <li className='total_block' style={{ background: "#5861AE", fontWeight: "bold", fontSize: "25px", color: "white", width: "35vw", textAlign: "right" }}>Total: <span style={{ fontSize: "1.8rem" }}>{parseInt(handleSubmit("total")) + 90}</span></li>
                         <li className='address'>Address
                             <div className='homeAddress'>
-                                <div><img src="/icons/tick.svg" alt="tick-img" style={{ float: "right" }} /></div>
+                                <div><img src="/icons/tick.svg" style={{ float: "right" }} /></div>
                                 <div style={{ fontWeight: "bold" }}>Home</div>
                                 <div style={{ color: "#777" }}>#223, 10th road, JP Nagar, Bangalore</div>
                             </div>
