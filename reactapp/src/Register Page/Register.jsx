@@ -32,7 +32,7 @@ function Register() {
       16 >= UserData.Password.length &&
       UserData.Password.length >= 6
     ) {
-      await fetch(url, {
+      await fetch(`${url}/user/register`, {
         method: "post",
         body: JSON.stringify(UserData),
         headers: { "Content-Type": "application/json" },
