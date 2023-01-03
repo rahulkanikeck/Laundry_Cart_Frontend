@@ -23,7 +23,7 @@ function Register() {
   const [checkBoxStatus, setCheckBoxStatus] = useState();
   const [error, setError] = useState("");
   const [passErr, setPassErr] = useState("");
-  let url = "http://localhost:8080/user/register";
+  let url = "http://localhost:9000/user/register";
   // console.log(UserData);
   async function Submit(e) {
     e.preventDefault();
@@ -42,7 +42,7 @@ function Register() {
         })
         .then((data) => {
           console.log(data);
-          if (data.status === "Registration Successfull") {
+          if (data.Message === "Registration Successfull") {
             toast.success("Registration Successfull");
             setTimeout(() => {
               SignInPageNevigate(routes[0].route);
@@ -58,7 +58,7 @@ function Register() {
       if (UserData.Phone.length !== 10) {
         setError("Phone Number Must Have 10 Digits");
       } else if (
-        16 < UserData.Password.length &&
+        16 < UserData.Password.length ||
         UserData.Password.length < 6
       ) {
         setError("Password Must have Min-6 And Max-16 Characetrs");

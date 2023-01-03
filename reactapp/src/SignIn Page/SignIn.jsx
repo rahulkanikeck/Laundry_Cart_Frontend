@@ -18,7 +18,8 @@ function SignIn() {
   const [error, setError] = useState("");
   const [loginData, setloginData] = useState("");
   const [name, setName] = useState("");
-  let url = "http://localhost:8080/user/signin";
+  let url =
+    process.env.REACT_APP_API_URL || "http://localhost:9000/user/signin";
 
   // console.log(UserData);
   async function Submit(e) {
@@ -33,23 +34,21 @@ function SignIn() {
       })
       .then((data) => {
         setToken("token", data.token);
+        // console.log(data);
         if (data.status === "Login Successfully") {
           toast.success("Login Successfully");
           setloginData(data);
           setTimeout(() => {
             RegisterPagenavigate("/orders");
           }, 1500);
+        } else {
+          toast.error(data.Message);
         }
       })
       .catch((e) => {
         toast.error(e.message);
       });
     // console.log(getToken("token"));
-    // log in data fetched through fetch api method
-    if (loginData.status === "Failed") {
-      setError(loginData.Message);
-      // console.log(loginData);
-    }
   }
 
   return (
@@ -120,12 +119,6 @@ function SignIn() {
                 Sign In
               </button>
             </form>
-            <p className="errorMsg">
-              {error === "Invalid Email or Phone" ||
-              error === "Incorrect Password"
-                ? error
-                : ""}
-            </p>
           </section>
         </div>
 
