@@ -55,7 +55,7 @@ function HomeFooter() {
           </div>
         </div>
         <div className="End_footer">
-          <p>2023 &copy; Laundry</p>
+          <p>2022 &copy; Laundry</p>
         </div>
       </footer>
     </>
