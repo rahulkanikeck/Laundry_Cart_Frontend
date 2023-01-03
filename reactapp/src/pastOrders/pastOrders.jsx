@@ -1,4 +1,5 @@
 
+
 import React, { useState  , useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import { getToken } from "../authOperations";
@@ -6,10 +7,13 @@ import Alert from "../alert/alert";
 import './pastOrders.css';
 //import './cancelSummary.css'
 
+
+
 const URL = process.env.REACT_APP_API_URL || "http://localhost:9000";
 
 const PastOrders = ({ data }) => {
   const navigate = useNavigate();
+
 
   const [alertPopUp, setAlertPopUp] = useState(false);
   const [summaryOn1, setSummaryOn1] = useState(false);
@@ -139,6 +143,10 @@ const PastOrders = ({ data }) => {
             )}
 
 
+
+
+
+
             <table id="order-table" className={`fontSize ${summaryOn1 ? "blur" : ""}`} >
                 <thead>
                     <tr style={{ position: "sticky", top: 0 }}>
@@ -176,5 +184,8 @@ const PastOrders = ({ data }) => {
         </>
     )
 }
+
+    
+
 
 export default PastOrders;
