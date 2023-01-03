@@ -1,0 +1,14 @@
+.mainPage-footer {
+    text-align:center;
+    background-color: #182838;
+    color: white;
+    height: 34px;
+    align-self: center;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+.mainPage-footer div {
+    padding-top: 12px;
+    opacity: 5;
+}
