@@ -19,13 +19,12 @@ function SignIn() {
   const [loginData, setloginData] = useState("");
   const [name, setName] = useState("");
 
-  let url = process.env.REACT_APP_API_URL || "http://localhost:9000/user/signin";
-
+  let url = "https://laundry-cart-backend-dbsk.onrender.com/user/signin";
 
   // console.log(UserData);
   async function Submit(e) {
     e.preventDefault();
-    await fetch(`${url}/user/signin`, {
+    await fetch(url, {
       method: "post",
       body: JSON.stringify(UserData),
       headers: { "Content-Type": "application/json" },
