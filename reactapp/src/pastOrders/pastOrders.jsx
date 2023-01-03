@@ -1,4 +1,5 @@
-import React, {useState , useEffect} from "react";
+
+import React, { useState  , useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import { getToken } from "../authOperations";
 import Alert from "../alert/alert";
@@ -7,18 +8,18 @@ import './pastOrders.css';
 
 const URL = process.env.REACT_APP_API_URL || "http://localhost:9000";
 
-const PastOrders = ({data})=> {
-    const navigate = useNavigate();
+const PastOrders = ({ data }) => {
+  const navigate = useNavigate();
 
-    const [alertPopUp, setAlertPopUp] = useState(false);
-    const [summaryOn1, setSummaryOn1] = useState(false);
-    const [cancelDisplay , setCancelDisplay] = useState(true)
+  const [alertPopUp, setAlertPopUp] = useState(false);
+  const [summaryOn1, setSummaryOn1] = useState(false);
+  const [cancelDisplay, setCancelDisplay] = useState(true);
     const [viewdata , setViewData] = useState()
 
-    data?.map(obj => {
-        const date = new Date(obj.createdAt)
-        return obj.createdAt = date.toLocaleString();
-    });
+  data?.map((obj) => {
+    const date = new Date(obj.createdAt);
+    return (obj.createdAt = date.toLocaleString());
+  });
 
     const handleCancel = (order_id) => {
         const token = getToken("token");
@@ -78,9 +79,9 @@ const PastOrders = ({data})=> {
         }
     }
 
-    return (
-        <>
-            {alertPopUp ? <Alert /> : <></>}
+  return (
+    <>
+      {alertPopUp ? <Alert  /> : <></>}
 
             {summaryOn1 ? (
                 <div id="summary">

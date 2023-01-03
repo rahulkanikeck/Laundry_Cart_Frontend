@@ -42,7 +42,7 @@ function Register() {
         })
         .then((data) => {
           console.log(data);
-          if (data.status === "Registration Successfull") {
+          if (data.Message === "Registration Successfull") {
             toast.success("Registration Successfull");
             setTimeout(() => {
               SignInPageNevigate('/');
@@ -58,7 +58,7 @@ function Register() {
       if (UserData.Phone.length !== 10) {
         setError("Phone Number Must Have 10 Digits");
       } else if (
-        16 < UserData.Password.length &&
+        16 < UserData.Password.length ||
         UserData.Password.length < 6
       ) {
         setError("Password Must have Min-6 And Max-16 Characetrs");
