@@ -23,7 +23,7 @@ function Register() {
   const [checkBoxStatus, setCheckBoxStatus] = useState();
   const [error, setError] = useState("");
   const [passErr, setPassErr] = useState("");
-  let url = "http://localhost:8080/user/register";
+  let url = "http://localhost:9000/user/register";
   // console.log(UserData);
   async function Submit(e) {
     e.preventDefault();
@@ -45,7 +45,7 @@ function Register() {
           if (data.status === "Registration Successfull") {
             toast.success("Registration Successfull");
             setTimeout(() => {
-              SignInPageNevigate(routes[0].route);
+              SignInPageNevigate('/');
             }, 1500);
           } else {
             toast.error(data.Message);
