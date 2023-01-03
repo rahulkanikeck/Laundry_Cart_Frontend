@@ -23,8 +23,7 @@ function Register() {
   const [checkBoxStatus, setCheckBoxStatus] = useState();
   const [error, setError] = useState("");
   const [passErr, setPassErr] = useState("");
-  let url =
-    process.env.REACT_APP_API_URL || "http://localhost:9000/user/register";
+  let url = "https://laundry-cart-backend-dbsk.onrender.com/user/register";
   // console.log(UserData);
   async function Submit(e) {
     e.preventDefault();
@@ -33,7 +32,7 @@ function Register() {
       16 >= UserData.Password.length &&
       UserData.Password.length >= 6
     ) {
-      await fetch(`${url}/user/register`, {
+      await fetch(url, {
         method: "post",
         body: JSON.stringify(UserData),
         headers: { "Content-Type": "application/json" },
