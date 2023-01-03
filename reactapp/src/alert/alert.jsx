@@ -22,10 +22,10 @@ const Alert = () => {
     return (
         <>
             {modal && (
-                <div className="modal1">
+                <div className="modal1 modal2">
                     <div onClick={toggleModal} className="overlay1"></div>
                     <div className="modal-content1">
-                        <h3 className="modal_title1">Alert</h3>
+                        <h3 className="modal_title1"><p style={{paddingLeft : "10px" , color: "white"}}>Alert</p></h3>
 
                         <div className="button_body">
                             <img src={danger} alt="danger" className="alert_img" />

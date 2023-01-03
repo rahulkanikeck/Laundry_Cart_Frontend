@@ -1,19 +1,14 @@
-
-
 import React, { useState  , useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import { getToken } from "../authOperations";
 import Alert from "../alert/alert";
 import './pastOrders.css';
-//import './cancelSummary.css'
-
-
+import '../productsRow/summary.css'
 
 const URL = process.env.REACT_APP_API_URL || "http://localhost:9000";
 
 const PastOrders = ({ data }) => {
   const navigate = useNavigate();
-
 
   const [alertPopUp, setAlertPopUp] = useState(false);
   const [summaryOn1, setSummaryOn1] = useState(false);
@@ -105,7 +100,8 @@ const PastOrders = ({ data }) => {
                             Phone:{viewdata.storePhone}
                         </div>
                     </div>
-                    <p style={{ color: "#3B3737", paddingLeft: "1rem" }}>Order Details</p>
+                    <div className="details">Order Details</div>
+                    <div>
                     <ol className='list_style'>
                         {viewdata.cart.map((data2) => (
                             <li key={data.key} className='bottom_border'>
@@ -121,7 +117,7 @@ const PastOrders = ({ data }) => {
                             </li>
                         ))}
                         <li className='total_block' >Sub Total: &nbsp;&nbsp;{parseInt(viewdata.price) - 90}</li>
-                        <li className='total_block'>Pickup Charges: 90</li>
+                        <li className='total_block1'>Pickup Charges: 90</li>
                         <li className='total_block' style={{ background: "#5861AE", fontWeight:"bold" , fontSize:"25px" ,color: "white", width: "35vw", textAlign: "right" }}>Total: <span >{viewdata.price}</span></li>
                         <li className='address'>Address
                             <div className='homeAddress'>
@@ -137,6 +133,7 @@ const PastOrders = ({ data }) => {
                             </button>
                         </li>
                     </ol>
+                    </div>
                 </div>
             ) : (
                 <></>

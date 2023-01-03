@@ -23,7 +23,7 @@ function Register() {
   const [checkBoxStatus, setCheckBoxStatus] = useState();
   const [error, setError] = useState("");
   const [passErr, setPassErr] = useState("");
-  let url = "http://localhost:9000/user/register";
+  let url = process.env.REACT_APP_API_URL || "http://localhost:9000/user/register";
   // console.log(UserData);
   async function Submit(e) {
     e.preventDefault();

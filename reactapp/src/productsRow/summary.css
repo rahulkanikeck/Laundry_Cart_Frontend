@@ -10,6 +10,12 @@
     display: flex;
 }
 
+.details {
+    display: flex;
+    padding-left: 40px;
+
+}
+
 .heading {
     background: #5861AE;
     color: #fff;
@@ -19,6 +25,8 @@
 }
 
 .subheading {
+    width: fit-content;
+    margin: 10px;
     height: 12.5vh;
     background-color: #F4F9FF;
 }
@@ -56,6 +64,15 @@
 
 .total_block {
     margin-right: 5vw;
+    border-bottom: 1px solid #ddd;
+    float: right;
+    padding: 1rem 6rem;
+    color: #777;
+}
+
+
+.total_block1 {
+    /* margin-right: 5vw; */
     border-bottom: 1px solid #ddd;
     float: right;
     padding: 1rem 8rem;

@@ -11,7 +11,7 @@ body.active-modal {
   
   .modal1,
   .overlay1 {
-    width: 100vw;
+    width: 100vw ;
     height: 100vh;
     top: 0;
     left: 0;
@@ -19,6 +19,7 @@ body.active-modal {
     bottom: 0;
     position: fixed;
   }
+
   
   .overlay1 {
     background: rgba(49, 49, 49, 0.8);
@@ -30,10 +31,10 @@ body.active-modal {
     transform: translate(-50%, -50%);
     line-height: 1.4;
     background: #f1f1f1;
-    padding: 14px 28px;
-    border-radius: 3px;
-    width: 186px;
-    height: 144px;
+    /* padding: 14px 28px; */
+    /* border-radius: 3px; */
+    width: 415px;
+    height: 210px;
   }
   
   .tickimage {
@@ -43,11 +44,13 @@ body.active-modal {
   }
   
   .modal_title1 {
-    position: absolute;
-    top: 1px;
-    width: 197px;
-    height: 66px;
-    margin-left: 5px;
+    margin: 0%;
+    background-color: #5861AE;
+    display: flex;
+    /* position: absolute; */
+    align-items: center;
+    width: 415px;
+    height: 43px;
   }
   
   .modal_para {
@@ -64,9 +67,10 @@ body.active-modal {
   
   .alert_img {
     position: absolute;
+    left: 30px;
     width: 30px;
     height: 30px;
-    top: 60px;
+    top: 90px;
   }
   
   .alert_para {
