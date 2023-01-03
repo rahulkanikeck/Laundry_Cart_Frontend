@@ -23,7 +23,8 @@ function Register() {
   const [checkBoxStatus, setCheckBoxStatus] = useState();
   const [error, setError] = useState("");
   const [passErr, setPassErr] = useState("");
-  let url = process.env.REACT_APP_API_URL || "http://localhost:9000/user/register";
+  let url =
+    process.env.REACT_APP_API_URL || "http://localhost:9000/user/register";
   // console.log(UserData);
   async function Submit(e) {
     e.preventDefault();
@@ -45,7 +46,7 @@ function Register() {
           if (data.Message === "Registration Successfull") {
             toast.success("Registration Successfull");
             setTimeout(() => {
-              SignInPageNevigate('/');
+              SignInPageNevigate("/");
             }, 1500);
           } else {
             toast.error(data.Message);
