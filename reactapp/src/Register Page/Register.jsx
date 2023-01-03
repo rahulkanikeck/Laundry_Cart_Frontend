@@ -45,7 +45,7 @@ function Register() {
           if (data.Message === "Registration Successfull") {
             toast.success("Registration Successfull");
             setTimeout(() => {
-              SignInPageNevigate(routes[0].route);
+              SignInPageNevigate('/');
             }, 1500);
           } else {
             toast.error(data.Message);
