@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { getToken } from "../authOperations";
 import Popup from "../popup/popup";
 import './summary.css';
+import './row.css'
 
 const URL = process.env.REACT_APP_API_URL || "http://localhost:9000";
 
@@ -242,7 +243,8 @@ const ProductRow = () => {
                             />
                         </div>
                     </div>
-                    <p style={{ color: "#3B3737", paddingLeft: "1rem" }}>Order Details</p>
+                    <div className="details">Order Details</div>
+                    <div>
                     <ol className='list_style'>
                         {totalCart.map((data) => (
                             <li key={data.key} className='bottom_border'>
@@ -274,6 +276,7 @@ const ProductRow = () => {
                             </button>
                         </li>
                     </ol>
+                    </div>
                 </div>
             ) : (
                 <></>

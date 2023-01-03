@@ -19,8 +19,7 @@ function SignIn() {
   const [loginData, setloginData] = useState("");
   const [name, setName] = useState("");
 
-  let url =
-    process.env.REACT_APP_API_URL || "http://localhost:9000/user/signin";
+  let url = process.env.REACT_APP_API_URL || "http://localhost:9000/user/signin";
 
 
   // console.log(UserData);
