@@ -24,7 +24,7 @@ const PastOrders = ({ data }) => {
     const token = getToken("token");
     setCancelDisplay(!cancelDisplay);
 
-    fetch(`${url}/api/v1/orders/${order_id}`, {
+    fetch(url + `/api/v1/orders/${order_id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -42,7 +42,7 @@ const PastOrders = ({ data }) => {
   const handleView = (order_id) => {
     const token = getToken("token");
 
-    fetch(URL + `/api/v1/orders/${order_id}`, {
+    fetch(url + `/api/v1/orders/${order_id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
