@@ -153,7 +153,7 @@ const ProductRow = () => {
 
     const token = getToken("token");
     //console.log(token);
-    fetch(URL + "/api/v1/orders", {
+    fetch(url + "/api/v1/orders", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -336,7 +336,7 @@ const ProductRow = () => {
               <tr key={obj.id}>
                 <td>
                   <img
-                    src={`${URL}/images/` + obj.filename}
+                    src={`${url}/images/` + obj.filename}
                     alt={obj.name}
                     style={{ float: "left", padding: "0 .5rem" }}
                   />
